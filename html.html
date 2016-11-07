@@ -6,6 +6,11 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <style>
 body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+table, td, th {border: 1px solid #ddd; text-align: left;}
+
+table {border-collapse: collapse; height: 50px width: 100%;}
+
+th, td {padding: 15px;}
 </style>
 <body class="w3-light-grey">
 
@@ -32,14 +37,215 @@ and is wrapped around the whole page content, except for the footer in this exam
     </div>
 
     <div class="w3-container">
-      <p>
-        Getting used to the basics of the command line is somewhat essential to everything else. I've been told we can do pretty much absolutely anything from the command line, but I'm certainly not at that stage - and even illustrious programmers who have a decade of experience have a cheat sheet (I've seen it with mine own jellied orbs). <br>
-        So what do I know?
-      </p>
+      <div style= "padding: 0px 80px 60px 80px; text-align: justify;">
+        <p>
+          This is the most noticeable thing I have learned, you're looking at it right now! This is the thing I can build with, can immediately see results with. As such it's one of the things I've enjoyed most. As with the other tutorials, I'm sort of smashing the lego bricks together rather than building a to-scale model of Paris.<br>
+          So what do I know?
+        </p>
+        <p>
+          <ul>
+            <li>Tagging (good Lord, so much tagging)</li>
+            <li>How to generate a HTML skeleton (snaps for Andy for this <a href="http://www.brucelawson.co.uk/2010/a-minimal-html5-document/" target="_blank">lovely reference guide</a>)</li>
+            <li>Text formatting (because I can, I've put this into a handy table below)</li>
+            <li>Adding images/hyperlinks and the like</li>
+            <li>RELATIVE PATHING (my notes here devolve into waxing poetic about how gr9 it is to have knowledgeable people on hand to point me in the right direction)</li>
+            <li>Inline styling, and all that malarky (see that other table below, am quite fond of tables)</li>
+            <li>I made a v plain multiple page website dooberry with actual navigation bits, that was pretty cool, all about the <code>&lt;a href="ur link here yo"&gt;</code></li>
+          </ul>
+        </p>
+        <p>
+          This probably seems quite a small achievement, but to me, it's astonishing. This is a thing I would have flailed (<strong>hard</strong>) at a couple of weeks ago. <br>
+          The best thing about HTML is being able to view what you've picked up straight away. I've made this lil' thing with HTML (with a little CSS help from w3). And that's great fun. Tweaking around the template to make these individual pages has been made possible because of my understanding.
+        </p>
+        <p>
+          <span style="font-style: normal; font-size: 40px; font-weight: bold; color: #e6b800;">Here are some tasty tables of tags I can remember...</span>
+        </p>
+
+        <p>
+
+          <span style="font-style: normal; font-size: 20px; font-weight: bold;">Block Elements:</span>
+
+          <table>
+      <tr>
+        <th>Tag</th>
+        <th>Name</th>
+        <th>Purpose</th>
+      </tr>
+      <tr>
+        <td><code>h1</code>&ndash;<code>h6</code></td>
+        <td>headings</td>
+        <td>include a heading (levels 1&ndash;6)</td>
+      </tr>
+      <tr>
+        <td><code>p</code></td>
+        <td>paragraph</td>
+        <td>include a paragraph of text</td>
+      </tr>
+      <tr>
+        <td><code>table</code></td>
+        <td>table</td>
+        <td>include a table</td>
+      </tr>
+      <tr>
+        <td><code>tr</code></td>
+        <td>table row</td>
+        <td>include a row of data</td>
+      </tr>
+      <tr>
+        <td><code>th</code></td>
+        <td>table header</td>
+        <td>make a table header</td>
+      </tr>
+      <tr>
+        <td><code>td</code></td>
+        <td>table data</td>
+        <td>include a table data cell</td>
+      </tr>
+      <tr>
+        <td><code>header</code></td>
+        <td>header</td>
+        <td>label a section of the page</td>
+      </tr>
+      <tr>
+        <td><code>div</code></td>
+        <td>div</td>
+        <td>divide sections of the page</td>
+      </tr>
+      <tr>
+        <td><code>ol</code></td>
+        <td>ordered list</td>
+        <td>create a list of ordered things (1,2,3 etc.)</td>
+      </tr>
+      <tr>
+        <td><code>ul</code></td>
+        <td>unordered list</td>
+        <td>create an unordered list (bulleted points etc.)</td>
+      </tr>
+    </table>
+  </p>
+  <p>
+
+    <span style="font-style: normal; font-size: 20px; font-weight: bold;">Inline Elements:</span>
+
+    <table>
+      <tr>
+        <th>Tag</th>
+        <th>Name</th>
+        <th>Purpose</th>
+        <th>Example</th>
+        <th>Result</th>
+      </tr>
+      <tr>
+        <td><code>em</code></td>
+        <td>emphasised</td>
+        <td>make emphasised text</td>
+        <td><code>&lt;em&gt;techinal sophistication&lt;/em&gt;</code></td>
+        <td><em>technical sophistication</em></td>
+      </tr>
+      <tr>
+        <td><code>strong</code></td>
+        <td>strong</td>
+        <td>make strong text</td>
+        <td>
+          <code>
+            &lt;strong&gt;at least a billion people&lt;/strong&gt;
+          </code>
+        </td>
+        <td><strong>at least a billion people</strong></td>
+      </tr>
+      <tr>
+        <td><code>a</code></td>
+        <td>anchor</td>
+        <td>make a hyperlink</td>
+        <td>
+          <code>
+            &lt;a href="http://learnenough.com/"&gt;Learn Enough&lt;/a&gt;
+          </code>
+        </td>
+        <td><a href="http://learnenough.com/">Learn Enough</a></td>
+      </tr>
+      <tr>
+        <td><code>img</code></td>
+        <td>image</td>
+        <td>include an image</td>
+        <td>
+          <code>
+            &lt;img src="http://bit.ly/1MZAFuQ" alt="Michael Hartl"&gt;
+          </code>
+        </td>
+        <td><img src="http://bit.ly/1MZAFuQ" alt="Michaela Hartl">
+        </td>
+      </tr>
+      <tr>
+        <td><code>code</code></td>
+        <td>code</td>
+        <td>displays pieces of markup or source code</td>
+        <td><code>&lt;code&gt;&lt;em&gt;&lt;/code&gt;</code></td>
+        <td><code>em</code>
+      </tr>
+      <tr>
+        <td><code>span</code></td>
+        <td>span</td>
+        <td>groups and applies styles to inline elements</td>
+        <td><code>&lt;span style="font-size: 20px; font-weight: bold; color: #006699;"&gt;Once upon a time,&lt;/span&gt;</code> there was a young woman who wished to learn how to code...</td>
+        <td><span style="font-size: 20px; font-weight: bold; color: #006699;">Once upon a time,</span> there was a young woman who wished to learn how to code...</td>
+      </tr>
+      <tr>
+        <td><code>li</code></td>
+        <td>list</td>
+        <td>defines a list item</td>
+        <td>
+          <code>
+          &lt;li&gt;Vengeful whale&lt;/li&gt;<br>
+          &lt;li&gt;Salty sailors&lt;/li&gt;<br>
+          &lt;li&gt;The names "Queequeg" and "Starbuck"&lt;/li&gt;
+        </code>
+      </td>
+      <td>
+        <li>Vengeful whale</li>
+        <li>Salty sailors</li>
+        <li>The names "Queequeg" and "Starbuck"</li>
+      </td>
+    </tr>
+    </table>
+  </p>
+  <p>
+
+    <span style="font-style: normal; font-size: 20px; font-weight: bold;">Document Tags:</span>
+
+    <table>
+      <tr>
+        <th>Tag</th>
+        <th>Name</th>
+        <th>Purpose</th>
+      </tr>
+      <tr>
+        <td><code>html</code></td>
+        <td>HTML</td>
+        <td>defines the doc type as HTML</td>
+      </tr>
+      <tr>
+        <td><code>head</code></td>
+        <td>head</td>
+        <td>contains metadata such as: title, style etc.</td>
+      </tr>
+      <tr>
+        <td><code>body</code></td>
+        <td>body</td>
+        <td>contains all the contents of an HTML document, such as: text, hyperlinks, images, tables, lists etc.</td>
+      </tr>
+      <tr>
+        <td><code>meta</code></td>
+        <td>meta</td>
+        <td>provides metadata about the HTML document (not displayed on the page)</td>
+      </tr>
+    </table>
+    </p>
 
       </div>
     </div>
-  <hr>
+  </div>
+<hr>
 
 <!-- END BLOG ENTRIES -->
 </div>
